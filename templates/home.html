@@ -1,0 +1,345 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7eef4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d151c]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#0d151c] text-lg font-bold leading-tight tracking-[-0.015em]">Inclusivity</h2>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="checkLogin('/dashboard')"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#2094f3] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Dashboard</span>
+            </button>
+            <button onclick="checkLogin('/dashboard')" 
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">New challenge</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2 class="text-[#0d151c] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Welcome to the Inclusive Design Challenge</h2>
+            <p class="text-[#0d151c] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+              Join the community of designers improving digital product accessibility and inclusivity. Complete challenges, earn badges, and level up your skills.
+            </p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/f1e02433-b2b3-4f5e-8a31-c035794b7600.png");'
+                ></div>
+                <div>
+                  <p class="text-[#0d151c] text-base font-medium leading-normal">Color contrast</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">Make sure your text is legible on any background</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">2 challenges</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ac97c66f-f06e-481b-bf3a-0b282df4f1ff.png");'
+                ></div>
+                <div>
+                  <p class="text-[#0d151c] text-base font-medium leading-normal">Alt text</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">Describe images for people who can't see them</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">2 challenges</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/6b7566e6-ab9f-48fd-9c37-f6952e7d5572.png");'
+                ></div>
+                <div>
+                  <p class="text-[#0d151c] text-base font-medium leading-normal">Focus styles</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">Make sure interactive elements are visible when they're focused</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">1 challenge</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/b20225f6-b73a-489f-8b0f-98600f631b60.png");'
+                ></div>
+                <div>
+                  <p class="text-[#0d151c] text-base font-medium leading-normal">Keyboard navigation</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">Ensure your site is navigable using just a keyboard</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">3 challenges</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/746b9153-f079-48a9-be2f-6d5fc8e8ffc4.png");'
+                ></div>
+                <div>
+                  <p class="text-[#0d151c] text-base font-medium leading-normal">Screen reader</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">Provide context for non-visual users</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">1 challenge</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/02352bf7-e8a8-47c1-9c28-b52bfb5a8d2a.png");'
+                ></div>
+                <div>
+                  <p class="text-[#0d151c] text-base font-medium leading-normal">Captioning</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">Add captions for video content</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">1 challenge</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/ec6cb71d-8be4-493d-9f73-d69536997dc9.png");'
+                ></div>
+                <div>
+                  <p class="text-[#0d151c] text-base font-medium leading-normal">Text descriptions</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">Provide text descriptions of visual information</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">1 challenge</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/7c5230f4-be3b-4ce8-97b3-bddaa1f2bcdc.png");'
+                ></div>
+                <div>
+                  <p class="text-[#0d151c] text-base font-medium leading-normal">Audio descriptions</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">Narrate key visual information in audio content</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal">1 challenge</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-[#0d151c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Join a challenge</h3>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div class="text-[#0d151c] flex items-center justify-center rounded-lg bg-[#e7eef4] shrink-0 size-12" data-icon="PaintBrush" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M232,32a8,8,0,0,0-8-8c-44.08,0-89.31,49.71-114.43,82.63A60,60,0,0,0,32,164c0,30.88-19.54,44.73-20.47,45.37A8,8,0,0,0,16,224H92a60,60,0,0,0,57.37-77.57C182.3,121.31,232,76.08,232,32ZM92,208H34.63C41.38,198.41,48,183.92,48,164a44,44,0,1,1,44,44Zm32.42-94.45q5.14-6.66,10.09-12.55A76.23,76.23,0,0,1,155,121.49q-5.9,4.94-12.55,10.09A60.54,60.54,0,0,0,124.42,113.55Zm42.7-2.68a92.57,92.57,0,0,0-22-22c31.78-34.53,55.75-45,69.9-47.91C212.17,55.12,201.65,79.09,167.12,110.87Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Color contrast</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal line-clamp-2">Earn 50 points</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <button onclick="checkLogin('/dashboard')" 
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Join</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div class="text-[#0d151c] flex items-center justify-center rounded-lg bg-[#e7eef4] shrink-0 size-12" data-icon="Image" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V158.75l-26.07-26.06a16,16,0,0,0-22.63,0l-20,20-44-44a16,16,0,0,0-22.62,0L40,149.37V56ZM40,172l52-52,80,80H40Zm176,28H194.63l-36-36,20-20L216,181.38V200ZM144,100a12,12,0,1,1,12,12A12,12,0,0,1,144,100Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Alt text</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal line-clamp-2">Earn 50 points</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <button onclick="checkLogin('/dashboard')" 
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Join</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div
+                  class="text-[#0d151c] flex items-center justify-center rounded-lg bg-[#e7eef4] shrink-0 size-12"
+                  data-icon="CursorClick"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M169.64,134.33l44.77-19.46A16,16,0,0,0,213,85.07L52.92,32.8A16,16,0,0,0,32.8,52.92L85.07,213a15.83,15.83,0,0,0,14.41,11l.79,0a15.83,15.83,0,0,0,14.6-9.59h0l19.46-44.77L184,219.31a16,16,0,0,0,22.63,0l12.68-12.68a16,16,0,0,0,0-22.63Zm-69.48,73.76.06-.05Zm95.15-.09-49.66-49.67a16,16,0,0,0-26,4.94l-19.42,44.65L48,48l159.87,52.21-44.64,19.41a16,16,0,0,0-4.94,26L208,195.31ZM88,24V16a8,8,0,0,1,16,0v8a8,8,0,0,1-16,0ZM8,96a8,8,0,0,1,8-8h8a8,8,0,0,1,0,16H16A8,8,0,0,1,8,96ZM120.85,28.42l8-16a8,8,0,0,1,14.31,7.16l-8,16a8,8,0,1,1-14.31-7.16Zm-81.69,96a8,8,0,0,1-3.58,10.74l-16,8a8,8,0,0,1-7.16-14.31l16-8A8,8,0,0,1,39.16,124.42Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Focus styles</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal line-clamp-2">Earn 50 points</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <button onclick="checkLogin('/dashboard')" 
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Join</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div class="text-[#0d151c] flex items-center justify-center rounded-lg bg-[#e7eef4] shrink-0 size-12" data-icon="Keyboard" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M223.51,48h-191A16.51,16.51,0,0,0,16,64.49v127A16.51,16.51,0,0,0,32.49,208h191A16.51,16.51,0,0,0,240,191.51v-127A16.51,16.51,0,0,0,223.51,48ZM224,191.51a.49.49,0,0,1-.49.49h-191a.49.49,0,0,1-.49-.49v-127a.49.49,0,0,1,.49-.49h191a.49.49,0,0,1,.49.49ZM208,128a8,8,0,0,1-8,8H56a8,8,0,0,1,0-16H200A8,8,0,0,1,208,128Zm0-32a8,8,0,0,1-8,8H56a8,8,0,0,1,0-16H200A8,8,0,0,1,208,96ZM72,160a8,8,0,0,1-8,8H56a8,8,0,0,1,0-16h8A8,8,0,0,1,72,160Zm96,0a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,160Zm40,0a8,8,0,0,1-8,8h-8a8,8,0,0,1,0-16h8A8,8,0,0,1,208,160Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Keyboard navigation</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal line-clamp-2">Earn 50 points</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <button onclick="checkLogin('/dashboard')" 
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Join</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div class="text-[#0d151c] flex items-center justify-center rounded-lg bg-[#e7eef4] shrink-0 size-12" data-icon="Headset" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M201.89,54.66A103.43,103.43,0,0,0,128.79,24H128A104,104,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Screen reader</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal line-clamp-2">Earn 50 points</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <button onclick="checkLogin('/dashboard')" 
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Join</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div class="text-[#0d151c] flex items-center justify-center rounded-lg bg-[#e7eef4] shrink-0 size-12" data-icon="Video" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M164.44,105.34l-48-32A8,8,0,0,0,104,80v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,129.05V95l25.58,17ZM216,40H40A16,16,0,0,0,24,56V168a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,128H40V56H216V168Zm16,40a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16H224A8,8,0,0,1,232,208Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Captioning</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal line-clamp-2">Earn 50 points</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <button onclick="checkLogin('/dashboard')" 
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Join</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div class="text-[#0d151c] flex items-center justify-center rounded-lg bg-[#e7eef4] shrink-0 size-12" data-icon="TextItalic" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M200,56a8,8,0,0,1-8,8H157.77L115.1,192H144a8,8,0,0,1,0,16H64a8,8,0,0,1,0-16H98.23L140.9,64H112a8,8,0,0,1,0-16h80A8,8,0,0,1,200,56Z"></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Text descriptions</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal line-clamp-2">Earn 50 points</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <button onclick="checkLogin('/dashboard')" 
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Join</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div class="text-[#0d151c] flex items-center justify-center rounded-lg bg-[#e7eef4] shrink-0 size-12" data-icon="Headset" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M201.89,54.66A103.43,103.43,0,0,0,128.79,24H128A104,104,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0d151c] text-base font-medium leading-normal line-clamp-1">Audio descriptions</p>
+                  <p class="text-[#49779c] text-sm font-normal leading-normal line-clamp-2">Earn 50 points</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <button onclick="checkLogin('/dashboard')" 
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7eef4] text-[#0d151c] text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Join</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function checkLogin(redirectUrl) {
+          fetch('/is_logged_in')
+              .then(response => response.json())
+              .then(data => {
+                  if (data.loggedIn) {
+                      window.location.href = redirectUrl;
+                  } else {
+                      window.location.href = '/login';
+                  }
+              });
+      }
+      </script>
+  </body>
+</html>
